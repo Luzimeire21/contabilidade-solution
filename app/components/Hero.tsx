@@ -12,7 +12,7 @@ export function Hero() {
         className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 items-center gap-16"
         data-testid="hero-container"
       >
-        <div className="max-w-[600px]" data-testid="hero-text-container">
+        <div className="max-w-150" data-testid="hero-text-container">
           <p
             className="mb-6 text-xs font-bold uppercase tracking-[0.25em] text-amber-400"
             data-testid="hero-tagline"
@@ -111,7 +111,7 @@ export function Overview() {
           {barrasAltura.map((altura, idx) => (
             <div
               key={idx}
-              className="rounded-t bg-gradient-to-t from-amber-500 to-amber-300 transition-height duration-300"
+              className="rounded-t bg-linear-to-t from-amber-500 to-amber-300 transition-height duration-300"
               style={{ height: `${altura}%` }}
               aria-label={`Barra ${idx + 1} altura ${altura}%`}
               data-testid={`chart-bar-${idx + 1}`}
