@@ -11,7 +11,6 @@ export function Header() {
 
   return (
     <header
-      className="relative z-50 bg-[#071c2b] px-5 py-5 text-white md:px-6"
       data-testid="header"
     >
       <div
@@ -76,10 +75,8 @@ export function Header() {
 
         <nav
           className={`absolute left-0 top-full w-full flex-col gap-2
-    bg-[#071c2b] px-6 pb-6 shadow-xl text-white
     ${menuAberto ? "flex" : "hidden"}
     md:static md:flex md:w-auto md:flex-row md:items-center md:gap-8 
-    md:bg-white md:text-slate-900 md:shadow-md md:border md:border-slate-200
     md:rounded-md
   `}
           data-testid="nav-menu"

@@ -2,7 +2,7 @@ export function Overview() {
   const barrasAltura = [35, 50, 43, 68, 61, 82, 95];
 
   return (
-    <div className="relative mt-32 rounded-2xl bg-white p-6 text-slate-900 shadow-2xl max-w-full md:max-w-[900px] mx-auto md:p-12">
+    <div className="relative mt-32 rounded-2xl bg-white p-6 text-slate-900 shadow-2xl max-w-full md:max-w-225 mx-auto md:p-12">
       <div className="flex items-start justify-between mb-8 px-2 md:px-6">
         <div>
           <p className="text-sm text-slate-500">Visão geral</p>
@@ -21,7 +21,7 @@ export function Overview() {
         {barrasAltura.map((altura, index) => (
           <div
             key={index}
-            className="self-end rounded-t-md bg-gradient-to-t from-amber-500 to-amber-300 transition-height duration-300"
+            className="self-end rounded-t-md bg-linear-to-t from-amber-500 to-amber-300 transition-height duration-300"
             style={{ height: `${altura}%` }}
             aria-label={`Barra ${index + 1} com altura ${altura}%`}
           />

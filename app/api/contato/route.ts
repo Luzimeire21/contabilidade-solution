@@ -34,7 +34,7 @@ export async function POST(request: Request) {
     }
 
     const { error } = await resend.emails.send({
-      from: "SOLUTION Contabilidade <site@contabilidadesolution.com.br>",
+      from: "SOLUTION Contabilidade <contato@@contabilidadesolution.com.br>",
       to: [process.env.CONTACT_EMAIL || "fabioalmeida.solution@gmail.com"],
       replyTo: email,
       subject: `Novo contato pelo site: ${servico}`,
